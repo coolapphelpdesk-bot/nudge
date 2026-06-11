@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Nudge</title>
+<meta name="description" content="Privacy policy for the Nudge Android application by Cool App Helpdesk.">
+<style>
+  :root {
+    --bg: #f8fafc; --surface: #ffffff; --text: #0f172a; --muted: #64748b;
+    --primary: #2563eb; --primary-soft: #dbeafe; --border: #e2e8f0;
+    --positive: #15803d; --positive-bg: #dcfce7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f172a; --surface: #1e293b; --text: #e2e8f0; --muted: #94a3b8;
+      --primary: #93c5fd; --primary-soft: #1e3a8a; --border: #334155;
+      --positive: #4ade80; --positive-bg: #14532d;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.65; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 40px 24px 96px; }
+  header { border-radius: 16px; padding: 32px 28px; margin-bottom: 24px;
+    background: linear-gradient(135deg, #38bdf8 0%, #2563eb 55%, #1e3a8a 100%); color: #fff; }
+  header h1 { margin: 0 0 6px; font-size: 28px; font-weight: 700; letter-spacing: -0.01em; }
+  header p { margin: 0; opacity: 0.92; font-size: 15px; }
+  .card { background: var(--surface); border: 1px solid var(--border);
+    border-radius: 14px; padding: 22px 26px; margin: 14px 0; }
+  h2 { font-size: 19px; font-weight: 600; margin: 0 0 12px; letter-spacing: -0.005em; }
+  p, ul, ol { margin: 0 0 12px; }
+  ul, ol { padding-left: 22px; } li { margin-bottom: 6px; }
+  .muted { color: var(--muted); font-size: 14px; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { font-weight: 600; color: var(--muted); background: var(--primary-soft); }
+  tr:last-child td { border-bottom: none; }
+  code { background: var(--primary-soft); padding: 1px 6px; border-radius: 4px;
+    font-size: 13px; font-family: "SFMono-Regular", Consolas, Menlo, monospace; }
+  a { color: var(--primary); text-decoration: none; } a:hover { text-decoration: underline; }
+  .badge { display: inline-block; background: var(--positive-bg); color: var(--positive);
+    font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 20px; }
+  .warning { display: inline-block; background: #fef3c7; color: #92400e;
+    font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 20px; }
+  footer { margin-top: 32px; text-align: center; color: var(--muted); font-size: 13px; }
+  @media (max-width: 480px) {
+    .wrap { padding: 24px 16px 64px; }
+    header { padding: 24px 20px; } header h1 { font-size: 24px; }
+    .card { padding: 18px 20px; } h2 { font-size: 17px; }
+    table { font-size: 13px; } th, td { padding: 8px 10px; }
+  }
+</style>
+</head>
+<body>
+<main class="wrap">
+
+<header>
+  <h1>Privacy Policy</h1>
+  <p>Nudge &middot; last updated <time datetime="2026-06-11">June 11, 2026</time></p>
+</header>
+
+<section class="card">
+  <h2>1. Summary</h2>
+  <p>Nudge (&ldquo;the app&rdquo;) is a free reminder and notification app that helps you stay on top of your tasks. It is published by <strong>Cool App Helpdesk</strong>.</p>
+  <ul>
+    <li>The developer <strong>collects no personal data</strong>. There are no user accounts and no developer-operated analytics or tracking systems.</li>
+    <li>The app includes an optional <strong>in-app feedback feature</strong> that sends your message to a developer-operated endpoint &mdash; see <a href="#network">section 5</a>.</li>
+    <li>Your reminders, categories, and settings stay on your device and are never sent anywhere unless you explicitly submit feedback.</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>2. Data we collect</h2>
+  <p><strong>None.</strong> Nudge does not automatically collect personal data, telemetry, identifiers, device information, IP addresses, or usage analytics. There are no user accounts and the developer operates no analytics or ad-serving infrastructure that the app communicates with automatically.</p>
+  <p>If you choose to <strong>submit feedback</strong> via the in-app feedback form, the message, subject, feedback type, and optional contact information you provide are sent to a developer-operated endpoint. This data is used solely to respond to your feedback and improve the app. See <a href="#network">section 5</a> for details.</p>
+</section>
+
+<section class="card">
+  <h2>3. Data stored on your device</h2>
+  <table>
+    <thead><tr><th>Item</th><th>Where</th><th>Sent off device?</th></tr></thead>
+    <tbody>
+      <tr><td>Reminders, categories, history</td><td>Local Room database (<code>NudgeDatabase</code>)</td><td><span class="badge">Never</span></td></tr>
+      <tr><td>App settings (theme, default reminder settings, etc.)</td><td>App-private <code>DataStore</code> preferences</td><td><span class="badge">Never</span></td></tr>
+      <tr><td>Feedback messages (when submitted)</td><td>Sent to developer endpoint &mdash; not stored locally beyond the submission flow</td><td><span class="badge">Only on submission</span></td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="card">
+  <h2>4. Permissions used</h2>
+  <p>Nudge requires certain permissions to deliver timely reminders and notifications:</p>
+  <table>
+    <thead><tr><th>Permission</th><th>Purpose</th></tr></thead>
+    <tbody>
+      <tr><td><code>POST_NOTIFICATIONS</code></td><td>Display reminder notifications (Android 13+)</td></tr>
+      <tr><td><code>SCHEDULE_EXACT_ALARM</code></td><td>Schedule reminders at the exact time you set</td></tr>
+      <tr><td><code>USE_EXACT_ALARM</code></td><td>Fire reminders at the exact time you set</td></tr>
+      <tr><td><code>RECEIVE_BOOT_COMPLETED</code></td><td>Re-schedule alarms after device reboot</td></tr>
+      <tr><td><code>WAKE_LOCK</code></td><td>Wake the device when a reminder fires</td></tr>
+      <tr><td><code>VIBRATE</code></td><td>Vibrate on reminder notifications</td></tr>
+      <tr><td><code>FOREGROUND_SERVICE</code></td><td>Maintain alarm schedule in the background</td></tr>
+      <tr><td><code>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</code></td><td>Request exemption from battery optimisation so reminders fire reliably</td></tr>
+      <tr><td><code>INTERNET</code></td><td>Submit in-app feedback to the developer endpoint</td></tr>
+      <tr><td><code>ACCESS_NETWORK_STATE</code></td><td>Check network availability before submitting feedback</td></tr>
+    </tbody>
+  </table>
+  <p>The app does <strong>not</strong> request location, contacts, storage, microphone, camera, phone state, or any other sensitive permission beyond those listed above.</p>
+</section>
+
+<section class="card">
+  <h2>5. Network activity and third parties</h2>
+  <p id="network">Nudge communicates with <strong>one developer-operated endpoint</strong> solely for the optional in-app feedback feature:</p>
+  <ul>
+    <li><strong>Endpoint:</strong> <code>https://requests-847893873240.europe-west1.run.app</code> (Google Cloud Run)</li>
+    <li><strong>Purpose:</strong> Receive feedback messages (feature requests, bug reports, general inquiries)</li>
+    <li><strong>Data sent:</strong> Feedback type, subject, message body, and optional contact information &mdash; only when you explicitly tap Submit</li>
+  </ul>
+  <p>There are <strong>no third-party SDKs</strong> in the app. No advertising, analytics, crash-reporting, social, or attribution SDKs are included. The app does not serve ads, collect telemetry, or transmit any data automatically.</p>
+</section>
+
+<section class="card">
+  <h2>6. Children&rsquo;s privacy</h2>
+  <p>Nudge is not specifically directed at children, but the developer collects <strong>no personal information from anyone, including children</strong>.</p>
+  <p>We comply with the Children&rsquo;s Online Privacy Protection Act (COPPA) and the GDPR&rsquo;s provisions for children (GDPR-K). There is no profile, no account, no chat, and no in-app purchases.</p>
+  <p>Parents who have questions about their child&rsquo;s privacy can contact us at <a href="mailto:coolapphelpdesk@gmail.com">coolapphelpdesk@gmail.com</a>.</p>
+</section>
+
+<section class="card">
+  <h2>7. Data retention and deletion</h2>
+  <p>Because the developer does not automatically collect any data, there is nothing for us to retain or delete on our side. Feedback messages you submit are stored in the developer-operated endpoint and are retained only as long as needed to respond and address the feedback. To request deletion of your feedback data, contact us at <a href="mailto:coolapphelpdesk@gmail.com">coolapphelpdesk@gmail.com</a>.</p>
+  <p>To remove locally stored data (reminders, categories, history, settings), clear the app&rsquo;s storage in <em>Android Settings &rarr; Apps &rarr; Nudge &rarr; Storage &rarr; Clear storage</em>, or uninstall the app.</p>
+</section>
+
+<section class="card">
+  <h2>8. Security</h2>
+  <p>The app stores reminder data and preferences locally in the app&rsquo;s private storage, protected by Android&rsquo;s built-in application sandboxing. Network requests for feedback submission are made over HTTPS. The app is distributed through the Google Play Store, which verifies the developer signing key on every update.</p>
+</section>
+
+<section class="card">
+  <h2>9. Changes to this policy</h2>
+  <p>If any material aspect of how the app handles data ever changes, this page will be updated and the &ldquo;last updated&rdquo; date above will be bumped. Continued use after a change constitutes acceptance.</p>
+</section>
+
+<section class="card">
+  <h2>10. Contact</h2>
+  <p>Questions or feedback? Email <a href="mailto:coolapphelpdesk@gmail.com">coolapphelpdesk@gmail.com</a>.</p>
+</section>
+
+<footer>&copy; 2026 Cool App Helpdesk &middot; Nudge</footer>
+
+</main>
+</body>
+</html>
